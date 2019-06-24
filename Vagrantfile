@@ -1,9 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 # A Vagrantfile to setup 3 gluster server (skeltal) and one gluster client
-file1 = '~/gluster_store/large_disk1.vdi'
-file2 = '~/gluster_store/large_disk2.vdi'
-file3 = '~/gluster_store/large_disk3.vdi'
+file1 = '/opt/gluster_store/large_disk1.vdi'
+file2 = '/opt/gluster_store/large_disk2.vdi'
+file3 = '/opt/gluster_store/large_disk3.vdi'
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-18.04"
   config.vm.define "gluster1" do |vm1|

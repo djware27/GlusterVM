@@ -9,5 +9,5 @@ a small amount of storage space.
 - Installs Bento/Ubuntu 18.04
 
 Steps:
-1. Create a directory called gluster_store
+1. Create a directory called /opt/gluster_store
 3. vagrant up
