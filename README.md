@@ -10,4 +10,4 @@ a small amount of storage space.
 
 Steps:
 1. Create a directory called gluster_store
-3. vagrant run
+3. vagrant up
