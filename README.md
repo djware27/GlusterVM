@@ -7,3 +7,8 @@ a small amount of storage space.
 - Tested with Vagrant 2.2.4
 
 - Installs Bento/Ubuntu 18.04
+
+Steps:
+1. Create a directory called gluster_store
+2. vagrant init
+3. vagrant run
