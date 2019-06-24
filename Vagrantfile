@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
    	vm1.vm.provider "virtualbox" do |vb|
      		vb.name = "gluster1"
      		vb.gui = false
-#                vb.customize ['createhd', '--filename', file1, '--size', 20 * 1024]
+                vb.customize ['createhd', '--filename', file1, '--size', 20 * 1024]
                 vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file1]
      		vb.cpus = 2
      		vb.memory = "2048"
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   	vm2.vm.network "private_network", ip: "10.10.1.20"
    	vm2.vm.provider "virtualbox" do |vb|
      		vb.name = "gluster2"
-#                vb.customize ['createhd', '--filename', file2, '--size', 20 * 1024]
+                vb.customize ['createhd', '--filename', file2, '--size', 20 * 1024]
                 vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file2]
      		vb.gui = false
      		vb.cpus = 2
@@ -35,7 +35,7 @@ Vagrant.configure("2") do |config|
   	vm3.vm.network "private_network", ip: "10.10.1.30"
    	vm3.vm.provider "virtualbox" do |vb|
      		vb.name = "gluster3"
-#                vb.customize ['createhd', '--filename', file3, '--size', 20 * 1024]
+                vb.customize ['createhd', '--filename', file3, '--size', 20 * 1024]
                 vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file3]
      		vb.gui = false
      		vb.cpus = 2
